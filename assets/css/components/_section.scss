@@ -1,0 +1,32 @@
+.section {
+    &__title {
+        font-size: rem(50px);
+        color: $primary;
+        margin-bottom: 18px;
+        font-weight: 400;
+    }
+    &__intro {
+        font-size: rem(14px);
+        letter-spacing: rem(0.41px);
+    }
+    &--noces {
+        padding: 27px 0px 58px;
+        .section {
+            &__intro {
+                display: inline-block;
+                margin-bottom: 43px;
+            }
+        }
+    }
+    &--value {
+        .section {
+            &__title,
+            &__intro {
+                text-align: center;
+            }
+            &__intro {
+                margin-bottom: 61px;
+            }
+        }
+    }
+}

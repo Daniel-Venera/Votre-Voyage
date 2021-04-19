@@ -1,0 +1,11 @@
+body {
+    font-family: $font;
+    color: $black;
+}
+a {
+    color: $primary;
+    transition: $trs;
+    &:hover {
+        text-decoration: none;
+    }
+}

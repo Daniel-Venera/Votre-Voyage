@@ -1,0 +1,63 @@
+.value {
+    display: flex;
+    font-size: 14px;
+    letter-spacing: rem(0.41px);
+    @include large-down {
+        display: block;
+    }
+    &__illu,
+    &__list {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 100%;
+        @include large-down {
+            max-width: 100%;
+        }
+    }
+    &__illu {
+        @include large-down {
+            margin-bottom: 48px;
+        }
+    }
+    &__img {
+        height: 300px;
+        background: url("../img/value/beach.jpg") center center no-repeat;
+        background-size: cover;
+        margin-bottom: 27px;
+    }
+    &__title {
+        color: $primary;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    &__link {
+        font-size: 12px;
+    }
+    &__list {
+        padding-left: 70px;
+        @include large-down {
+            padding-left: 0;
+        }
+    }
+    &__val {
+        display: flex;
+        align-items: center;
+        @include mobile-down {
+            flex-direction: column;
+        }
+        margin-bottom: 54px;
+    }
+    &__body {
+        padding-left: 62px;
+        font-family: Helvetica;
+        @include mobile-down {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+    &__icon {
+        @include mobile-down {
+            margin-bottom: 16px;
+        }
+    }
+}

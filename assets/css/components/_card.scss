@@ -1,0 +1,47 @@
+.card {
+    height: 371px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px 14px;
+    color: $white;
+    background-size: cover !important;
+    text-decoration: none;
+    &:hover {
+        transform: translateY(-8px);
+    }
+    &:first-child {
+        background: linear-gradient(0deg, #402004 0%, rgba(216, 216, 216, 0) 62%), url("../img/card/australie.png") center center no-repeat;
+    }
+    &:nth-child(2) {
+        background: linear-gradient(0deg, #741305 0%, rgba(216, 216, 216, 0) 65%), url("../img/card/maldives.png") center center no-repeat;
+    }
+    &:nth-child(3) {
+        background: linear-gradient(0deg, #4e3204 0%, rgba(216, 216, 216, 0) 64%), url("../img/card/tanzanie.png") center center no-repeat;
+    }
+    &:last-child {
+        background: linear-gradient(0deg, #368e8c 0%, rgba(216, 216, 216, 0) 71%), url("../img/card/thailand.png") center center no-repeat;
+    }
+    &__title {
+        font-size: rem(16px);
+        letter-spacing: rem(0.47px);
+        padding-left: 8px;
+        font-weight: 500;
+    }
+    &__flex {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 8px;
+    }
+    &__extract {
+        display: inline-block;
+        font-size: rem(12px);
+        letter-spacing: rem(0.2px);
+        margin-bottom: 16px;
+    }
+    &__star {
+        &--empty {
+            opacity: 30%;
+        }
+    }
+}

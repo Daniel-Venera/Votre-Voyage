@@ -1,0 +1,69 @@
+$trs: all 0.3s ease-in-out;
+//************************* FONT *************************//
+$font: Helvetica;
+//************************* COLORS *************************//
+$primary: #29abb7;
+$black: #575757;
+$white: #fff;
+//************************* BREAKPOINTS *************************//
+$mobile-down: 575px;
+$mobile-up: 576px;
+$tablet-down: 767px;
+$tablet-up: 768px;
+$large-down: 991px;
+$large-up: 992px;
+$desktop-down: 1199px;
+$desktop-up: 1200px;
+$large-desktop-down: 1439px;
+$large-desktop-up: 1440px;
+//************************* MEDIA QUERIES *************************//
+@mixin mobile-up {
+    @media (min-width: $mobile-up) {
+        @content;
+    }
+}
+@mixin mobile-down {
+    @media (max-width: $mobile-down) {
+        @content;
+    }
+}
+@mixin tablet-up {
+    @media (min-width: $tablet-up) {
+        @content;
+    }
+}
+@mixin tablet-down {
+    @media (max-width: $tablet-down) {
+        @content;
+    }
+}
+@mixin large-up {
+    @media (min-width: $large-up) {
+        @content;
+    }
+}
+@mixin large-down {
+    @media (max-width: $large-down) {
+        @content;
+    }
+}
+@mixin desktop-up {
+    @media (min-width: $desktop-up) {
+        @content;
+    }
+}
+@mixin desktop-down {
+    @media (max-width: $desktop-down) {
+        @content;
+    }
+}
+@mixin large-desktop-up {
+    @media (min-width: $large-desktop-up) {
+        @content;
+    }
+}
+@mixin large-desktop-down {
+    @media (max-width: $large-desktop-down) {
+        @content;
+    }
+}
